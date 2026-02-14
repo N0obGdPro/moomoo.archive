@@ -40,6 +40,9 @@ let opens = _____WB$wombat$assign$function_____("opens");
 	exports.kFormat = function(num) {
     	return num>999?(num/1000).toFixed(1)+'k':num;
 	};
+	exports.mFormat = function(num) {
+    	return num>999999?(num/1000000).toFixed(1)+'m':num;
+	};
 	exports.capitalizeFirst = function(string) {
 		return string.charAt(0).toUpperCase() + string.slice(1);
 	};
